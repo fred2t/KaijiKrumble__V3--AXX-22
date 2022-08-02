@@ -1,0 +1,72 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--sm-comp-2);
+    z-index: 1000;
+
+    .app-logo {
+        display: flex;
+        transition: 0.5s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .banner {
+            width: 8rem;
+            height: 100%; // the height of the header
+            z-index: 100;
+        }
+
+        .text {
+            position: relative;
+            right: 1.3rem;
+
+            font-family: "Cedarville Cursive", cursive;
+            font-size: 4rem;
+        }
+    }
+
+    .page-navigator {
+        display: flex;
+        align-items: center;
+
+        width: stretch;
+
+        .layer {
+            // flex will be used to make links of equal width with flex: 1; later
+            display: flex;
+
+            width: stretch;
+            height: stretch;
+
+            * {
+                // using * to select mui icons as well
+                font-size: 1.5rem;
+                font-family: "Edu VIC WA NT Beginner", cursive;
+            }
+
+            > * {
+                // > * to select each link of the navbar (can't use a {...} cause of a nextjs' link component quirk
+                padding: 1rem;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 10px 0px black;
+                }
+            }
+
+            .register-btn {
+            }
+
+            .login-btn {
+            }
+        }
+    }
+}

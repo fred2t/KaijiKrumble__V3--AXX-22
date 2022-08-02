@@ -1,0 +1,50 @@
+// kaiji
+.k-emperor {
+    color: darkgoldenrod;
+}
+
+.k-citizen {
+    color: blue;
+}
+
+.k-slave {
+    color: darkmagenta;
+}
+
+// font colours
+.cgreen {
+    color: green;
+}
+
+.cgold {
+    color: gold;
+}
+
+.corange {
+    color: orange;
+}
+
+.ddred {
+    color: darkred;
+}
+
+.cred {
+    color: red;
+}
+
+.cdblue {
+    color: darkblue;
+}
+
+.bgreen {
+    background-color: rgba($color: green, $alpha: 0.3);
+}
+
+.bred {
+    background-color: rgba($color: red, $alpha: 0.3);
+}
+
+// cursor stuff
+.point {
+    cursor: pointer;
+}

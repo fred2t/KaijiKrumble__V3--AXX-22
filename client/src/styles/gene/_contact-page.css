@@ -1,0 +1,10 @@
+.contact-page {
+  height: 90vh;
+  background-color: var(--blue-comp-1);
+  padding: 3rem;
+}
+.contact-page .MuiButton-root a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: 4rem;
+}

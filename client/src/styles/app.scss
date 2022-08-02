@@ -1,0 +1,58 @@
+@use "app-header";
+@use "app-footer";
+
+// page structuring
+@use "pages/homepage";
+@use "pages/error-page";
+@use "pages/contact-page";
+@use "pages/play-page";
+@use "pages/history";
+@use "pages/game-awaiting-page";
+
+// utility
+@use "animations";
+@use "responsiveness";
+@use "component-styles";
+@use "utility";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.1s ease;
+}
+
+html {
+    /* blue-themed colour composition */
+    --blue-comp-1: #13293d;
+    --blue-comp-2: #006494;
+    --blue-comp-3: #247ba0;
+    --blue-comp-4: #1b98e0;
+    --blue-comp-5: #e8f1f2;
+
+    // light comp
+    --sm-comp-1: #223843;
+    --sm-comp-2: #d77a61;
+    --sm-comp-3: #d8b4a0;
+    --sm-comp-4: #dbd3d8;
+    --sm-comp-5: #eff1f3;
+
+    // misc
+    --standard-horizontal-padding: 5%;
+    --standard-vertical-padding: 3%;
+}
+
+body {
+    background-color: gray;
+    color: white;
+}
+
+.app {
+    font-family: "Cinzel", serif;
+}
+
+/* fonts */
+// @import url("[font_url]") // font-family: ...
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap"); // font-family: "Edu VIC WA NT Beginner", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"); // font-family: 'Cinzel', serif;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"); // font-family: 'Cedarville Cursive', cursive;

@@ -1,0 +1,300 @@
+.game-container {
+  background-color: var(--sm-comp-3);
+  border: 1rem solid black;
+  display: flex;
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 1s ease;
+}
+.game-container .shade {
+  opacity: 0.4;
+}
+.game-container .game-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  width: 75%;
+}
+.game-container .game-space .hover-enlarge:hover {
+  transform: scale(1.2);
+}
+.game-container .game-space .player-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-container .game-space .avatar {
+  height: 10vh;
+  width: 10vh;
+}
+.game-container .game-space .hand {
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+}
+.game-container .game-space .hand .card {
+  height: clamp(0px, 15vh, 18vw);
+}
+.game-container .game-space .avatar-container {
+  position: relative;
+}
+.game-container .game-space .emote {
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-color: white;
+  color: black;
+}
+.game-container .game-space .opponent-side .opponent-avatar-container .opponent-emote {
+  left: -13.5rem;
+  bottom: -3rem;
+}
+.game-container .game-space .opponent-side .opponent-hand {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+}
+.game-container .game-space .middle-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 44vh;
+  color: black;
+}
+.game-container .game-space .middle-game-container .move-clock {
+  position: absolute;
+  left: 0;
+  font-size: 1.6rem;
+}
+.game-container .game-space .middle-game-container .opponent-move-clock {
+  top: 0;
+}
+.game-container .game-space .middle-game-container .client-move-clock {
+  bottom: 0;
+}
+.game-container .game-space .middle-game-container .round-counter {
+  position: absolute;
+  top: 0;
+}
+.game-container .game-space .middle-game-container .points-tracker {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  margin-right: 0.2rem;
+}
+.game-container .game-space .middle-game-container .opponent-points {
+  top: 0;
+}
+.game-container .game-space .middle-game-container .client-points {
+  bottom: 0;
+}
+.game-container .game-space .middle-game-container .searching-game-animation {
+  position: absolute;
+  height: 20vh !important;
+  width: 20vh !important;
+}
+.game-container .game-space .middle-game-container .game-end-message {
+  position: absolute;
+  text-align: center;
+  font-size: clamp(0px, 5rem, 8vh);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5rem;
+}
+.game-container .game-space .middle-game-container .played-cards .card {
+  height: clamp(0px, 20vh, 18vw);
+}
+.game-container .game-space .client-side .client-avatar-container .emote-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.game-container .game-space .client-side .client-avatar-container .emote-list .MuiButton-root {
+  background-color: white;
+  width: 17vw;
+  color: black;
+}
+.game-container .game-space .client-side .client-avatar-container .client-emote {
+  top: -3rem;
+  right: -13.5rem;
+}
+.game-container .game-space .client-side .client-avatar-container .emote-list.left {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+}
+.game-container .game-space .client-side .client-avatar-container .emote-list.right {
+  right: 0;
+  transform: translateX(100%) translateY(-50%);
+}
+.game-container .game-space .client-side .client-avatar-container .emote-list.top {
+  transform: translateX(-35%) translateY(-300%);
+}
+.game-container .game-space .client-side .client-avatar-container .client-avatar:hover {
+  cursor: pointer;
+}
+.game-container .game-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  background-color: var(--sm-comp-2);
+  padding: 1rem;
+}
+.game-container .game-sidebar .pre-game-search-container {
+  display: flex;
+  flex-direction: column;
+}
+.game-container .game-sidebar .pre-game-search-container .MuiButton-root {
+  margin-top: 0.5rem;
+}
+.game-container .game-sidebar .searching-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-container .game-sidebar .option-btn {
+  width: 1fr;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.game-container .game-sidebar .chat-space {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  max-height: 83vh;
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+  font-size: 1.2rem;
+}
+.game-container .game-sidebar .chat-space > header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.game-container .game-sidebar .chat-space > header .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 2rem;
+}
+.game-container .game-sidebar .chat-space > header .title .chat-badge .MuiBadge-badge {
+  top: 10px;
+  left: -10px;
+  font-size: 1.2rem;
+}
+.game-container .game-sidebar .chat-space > header .option-btns {
+  display: flex;
+  justify-content: center;
+}
+.game-container .game-sidebar .chat-space .messages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.game-container .game-sidebar .chat-space .messages .message {
+  display: flex;
+  font-family: initial;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 49%;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.5rem;
+}
+.game-container .game-sidebar .chat-space .messages .client-message {
+  margin-right: 0.5rem;
+  align-self: flex-end;
+  justify-content: flex-end;
+  background-color: lightskyblue;
+}
+.game-container .game-sidebar .chat-space .messages .opponent-message {
+  align-self: flex-start;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+  background-color: lightgray;
+}
+.game-container .game-sidebar .chat-space .messages .system-message {
+  align-self: center;
+}
+.game-container .game-sidebar .chat-space .new-message-container {
+  display: flex;
+}
+.game-container .game-sidebar .chat-space .new-message-container .MuiButton-root {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.game-container .app-sidebar .banner-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+}
+
+.play-drawer .anchor-list {
+  width: 20rem;
+}
+
+.play-friend-request-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+  width: 50vw;
+  height: 75vh;
+  background-color: gray;
+  color: white;
+  padding: 3rem;
+  border: 1px solid black;
+  box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+.play-friend-request-modal .MuiButton-root {
+  height: 10vh;
+  width: 80%;
+}
+.play-friend-request-modal .MuiButton-root.stretch-w {
+  width: 100%;
+}
+.play-friend-request-modal .create-game-page {
+  height: 100%;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+}
+.play-friend-request-modal .create-game-page .setup-container {
+  padding: 1rem;
+  font-size: 1.5rem;
+}

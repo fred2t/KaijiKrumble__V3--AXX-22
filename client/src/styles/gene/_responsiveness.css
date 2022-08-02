@@ -1,0 +1,63 @@
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+  .game-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .game-container .game-space {
+    width: 100%;
+  }
+  .game-container .game-space .middle-game-container .played-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+  }
+  .game-container .game-space .middle-game-container .played-cards img {
+    height: clamp(0px, 15vh, 18vw);
+  }
+  .game-container .game-sidebar {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+    align-items: flex-end;
+    max-height: 50vh;
+  }
+  .game-container .game-sidebar .pre-game-search-container {
+    flex-direction: row;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+    justify-content: flex-end;
+  }
+  .game-container .game-sidebar .chat-space > header .option-btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .game-container .game-sidebar .chat-space .messages .message {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+  .game-container .game-space .middle-game-container .played-cards img {
+    height: 150px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 5px;
+  }
+}

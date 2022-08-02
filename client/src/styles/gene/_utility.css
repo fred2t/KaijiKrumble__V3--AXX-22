@@ -1,0 +1,47 @@
+.k-emperor {
+  color: darkgoldenrod;
+}
+
+.k-citizen {
+  color: blue;
+}
+
+.k-slave {
+  color: darkmagenta;
+}
+
+.cgreen {
+  color: green;
+}
+
+.cgold {
+  color: gold;
+}
+
+.corange {
+  color: orange;
+}
+
+.ddred {
+  color: darkred;
+}
+
+.cred {
+  color: red;
+}
+
+.cdblue {
+  color: darkblue;
+}
+
+.bgreen {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.bred {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.point {
+  cursor: pointer;
+}

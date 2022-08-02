@@ -1,0 +1,382 @@
+.game-container {
+    background-color: var(--sm-comp-3);
+    border: 1rem solid black;
+    display: flex;
+
+    min-height: 100vh;
+    height: fit-content;
+    transition: 1s ease;
+
+    .shade {
+        opacity: 0.4;
+    }
+
+    .game-space {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: stretch;
+        width: 75%;
+
+        .hover-enlarge {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .player-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatar {
+            height: 10vh;
+            width: 10vh;
+        }
+
+        .hand {
+            display: flex;
+            justify-content: center;
+
+            width: stretch;
+
+            .card {
+                height: clamp(0px, 15vh, 18vw);
+            }
+        }
+
+        .avatar-container {
+            position: relative;
+        }
+
+        .emote {
+            position: absolute;
+
+            font-size: 1.5rem;
+            border-radius: 0.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+            background-color: white;
+            color: black;
+        }
+
+        .opponent-side {
+            .opponent-avatar-container {
+                .opponent-emote {
+                    left: -13.5rem;
+                    bottom: -3rem;
+                }
+            }
+
+            .opponent-hand {
+                // background-color: red;
+                height: stretch;
+            }
+        }
+
+        .middle-game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 44vh;
+
+            color: black;
+
+            .move-clock {
+                position: absolute;
+                left: 0;
+                font-size: 1.6rem;
+            }
+
+            .opponent-move-clock {
+                top: 0;
+            }
+
+            .client-move-clock {
+                bottom: 0;
+            }
+
+            .round-counter {
+                position: absolute;
+                top: 0;
+            }
+
+            .points-tracker {
+                position: absolute;
+                right: 0;
+                display: flex;
+                align-items: center;
+
+                margin-top: 0.2rem;
+                margin-right: 0.2rem;
+            }
+
+            .opponent-points {
+                top: 0;
+            }
+
+            .client-points {
+                bottom: 0;
+            }
+
+            .searching-game-animation {
+                position: absolute;
+
+                height: 20vh !important;
+                width: 20vh !important;
+            }
+
+            .game-end-message {
+                position: absolute;
+                text-align: center;
+
+                font-size: clamp(0px, 5rem, 8vh);
+                background-color: rgba($color: white, $alpha: 0.4);
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                border-radius: 5rem;
+            }
+
+            .played-cards {
+                .card {
+                    height: clamp(0px, 20vh, 18vw);
+                }
+            }
+        }
+
+        .client-side {
+            // background-color: green;
+
+            .client-hand {
+            }
+
+            .client-avatar-container {
+                .emote-list {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+
+                    .MuiButton-root {
+                        // the emote buttons
+
+                        background-color: white;
+                        width: 17vw;
+                        color: black;
+                    }
+                }
+
+                .client-emote {
+                    top: -3rem;
+                    right: -13.5rem;
+                }
+
+                .emote-list.left {
+                    left: 0;
+                    transform: translateX(-100%) translateY(-50%);
+                }
+
+                .emote-list.right {
+                    right: 0;
+                    transform: translateX(100%) translateY(-50%);
+                }
+
+                .emote-list.top {
+                    transform: translateX(-35%) translateY(-300%);
+                }
+
+                .client-avatar {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .game-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        background-color: var(--sm-comp-2);
+        padding: 1rem;
+
+        .pre-game-search-container {
+            display: flex;
+            flex-direction: column;
+
+            .MuiButton-root {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .searching-game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .option-btn {
+            width: 1fr;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .chat-space {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 0.5rem;
+            width: stretch;
+            height: stretch;
+            max-height: 83vh;
+            background-color: white;
+            color: black;
+            overflow-y: auto;
+            font-size: 1.2rem;
+
+            > header {
+                display: flex;
+                flex-direction: column;
+
+                position: relative;
+
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+
+                    font-size: 2rem;
+
+                    .chat-badge {
+                        .MuiBadge-badge {
+                            top: 10px;
+                            left: -10px;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .option-btns {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .messages {
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.5rem;
+
+                .message {
+                    display: flex;
+                    font-family: initial;
+
+                    width: fit-content;
+                    max-width: 49%;
+                    padding: 0.5rem;
+                    margin-bottom: 0.3rem;
+                    border-radius: 0.5rem;
+                }
+
+                .client-message {
+                    margin-right: 0.5rem;
+                    align-self: flex-end;
+                    justify-content: flex-end;
+                    background-color: lightskyblue;
+                }
+
+                .opponent-message {
+                    // move text box to right side
+                    align-self: flex-start;
+
+                    // move text inside box to right side too
+                    justify-content: flex-start;
+
+                    margin-left: 0.5rem;
+                    background-color: lightgray;
+                }
+
+                .system-message {
+                    align-self: center;
+                }
+            }
+
+            .new-message-container {
+                display: flex;
+
+                .MuiButton-root {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    .app-sidebar {
+        .banner-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+}
+
+// part of the play sidebar, but it's at the root element so it must be
+// outside here to be able to be styled
+.play-drawer {
+    .anchor-list {
+        width: 20rem;
+    }
+}
+
+.play-friend-request-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: auto;
+
+    width: 50vw;
+    height: 75vh;
+    background-color: gray;
+    color: white;
+    padding: 3rem;
+    border: 1px solid black;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+
+    .MuiButton-root {
+        height: 10vh;
+        width: 80%;
+    }
+
+    .MuiButton-root.stretch-w {
+        width: 100%;
+    }
+
+    .create-game-page {
+        height: 100%;
+        width: stretch;
+
+        .setup-container {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}

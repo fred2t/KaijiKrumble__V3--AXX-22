@@ -1,0 +1,10 @@
+.app-footer {
+  background-color: var(--sm-comp-1);
+  padding: 20px 0;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.app-footer .large {
+  font-size: 3rem;
+}

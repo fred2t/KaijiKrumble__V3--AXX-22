@@ -1,0 +1,18 @@
+{
+    "extends": "next/core-web-vitals",
+    "rules": {
+        "import/order": [
+            "warn",
+            {
+                "newlines-between": "always"
+            }
+        ],
+        "@next/next/no-img-element": "off",
+        "no-console": "warn",
+        "newline-before-return": "off",
+        "no-useless-return": "warn",
+        "prefer-const": "warn",
+        "no-unused-vars": "warn",
+        "no-fallthrough": "error"
+    }
+}

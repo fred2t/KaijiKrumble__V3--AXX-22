@@ -1,0 +1,177 @@
+$standard-x-translation: 8vw;
+$standard-y-translation: 8vh;
+$standard-diagonal-x-translation: 7vw;
+$standard-diagonal-y-translation: 7vh;
+
+// on-scroll-to destination's transitions onto screen
+.transition {
+    position: relative;
+    transition: 2s ease;
+
+    // optional
+    opacity: 0;
+}
+
+.in-place {
+    opacity: 1;
+}
+
+// left
+.transition-l {
+    left: -$standard-x-translation;
+}
+
+// right
+.transition-r {
+    left: $standard-x-translation;
+}
+
+// top
+.transition-t {
+    top: -$standard-y-translation;
+}
+
+// bottom
+.transition-b {
+    top: $standard-y-translation;
+}
+
+// top-left
+.transition-tl {
+    left: -$standard-diagonal-x-translation;
+    top: -$standard-diagonal-y-translation;
+}
+
+// top-right
+.transition-tr {
+    left: $standard-diagonal-x-translation;
+    top: -$standard-diagonal-y-translation;
+}
+
+// bottom-left
+.transition-bl {
+    left: -$standard-diagonal-x-translation;
+    top: $standard-diagonal-y-translation;
+}
+
+// bottom-right
+.transition-br {
+    left: $standard-diagonal-x-translation;
+    top: $standard-diagonal-y-translation;
+}
+
+// start the transition
+// it is paramount this selector be AFTER the transition types like transition-right
+// otherwise the transition will be overridden and the element will keep the offsetted
+// position
+.start-transition {
+    // no position: ... since this is expected to put onto a transitioning element
+    // which will already be positioned relative
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    opacity: 1;
+}
+
+/*
+
+.nice
+
+*/
+
+.hover-shake {
+    display: inline-block;
+}
+
+// hover effects
+.hover-shake:hover {
+    -webkit-animation: shake 0.8s;
+    animation: shake 0.8s;
+}
+
+.hover-spin:hover {
+    -webkit-animation: spin 0.8s;
+    animation: spin 0.8s;
+}
+
+.hover-shake:hover {
+    color: aqua;
+}
+
+.hover-jump:hover {
+    transform-origin: 50% 50%;
+    animation: jump 1s linear alternate;
+    animation-iteration-count: 2;
+}
+
+// hover effects
+@keyframes shake {
+    0% {
+        transform: translateX(15%) translateY(15%);
+    }
+
+    25% {
+        transform: translateX(-15%) translateY(15%);
+    }
+
+    50% {
+        transform: translateX(15%) translateY(-15%);
+    }
+
+    75% {
+        transform: translateX(-15%) translateY(-15%);
+    }
+
+    100% {
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        text-shadow: 0 0 15rem greenyellow, 0 0 15rem greenyellow, 0 0 15rem greenyellow;
+    }
+    to {
+        transform: rotate(360deg);
+        text-shadow: 0 0 1rem greenyellow, 0 0 1rem greenyellow, 0 0 1rem greenyellow;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    33% {
+        transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+    }
+
+    66% {
+        transform: translate3d(0, 30%, 0) scale3d(0.7, 1.5, 1);
+    }
+
+    100% {
+        transform: translate3d(0, 0%, 0) scale3d(1.5, 0.7, 1);
+    }
+}
+
+@keyframes gravity-jump {
+    0% {
+        transform: translateY(-60%);
+    }
+
+    33% {
+        transform: translateY(0);
+    }
+
+    66% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

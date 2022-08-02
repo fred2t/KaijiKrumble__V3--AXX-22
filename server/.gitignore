@@ -1,0 +1,7 @@
+node_modules
+.git
+.env
+cloudbuild.yaml
+
+# removed to hide deloyment secrets (gcloud)
+tsconfig.json

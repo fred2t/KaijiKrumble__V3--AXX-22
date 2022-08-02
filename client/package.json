@@ -1,0 +1,37 @@
+{
+    "name": "nast",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "test": "jest",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "gmainp": "git add . && git commit -m Zzupdate && git branch -M main && git push -u origin main",
+        "dockb": "docker build -t myapp",
+        "dockr": "docker run -p 3000:3000 myapp"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.9.3",
+        "@emotion/styled": "^11.9.3",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/material": "^5.8.4",
+        "@reduxjs/toolkit": "^1.8.2",
+        "next": "12.1.6",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-redux": "^8.0.2",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "@types/node": "18.0.0",
+        "@types/react": "18.0.14",
+        "@types/react-dom": "18.0.5",
+        "@types/uuid": "^8.3.4",
+        "eslint": "8.17.0",
+        "eslint-config-next": "12.1.6",
+        "sass": "^1.52.3",
+        "typescript": "^4.6.4"
+    }
+}

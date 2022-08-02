@@ -1,0 +1,20 @@
+.history-page {
+  min-height: 90vh;
+  background-color: var(--sm-comp-3);
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.history-page h1,
+.history-page h2,
+.history-page h3 {
+  margin-top: 3rem;
+}
+.history-page h1:first-child,
+.history-page h2:first-child,
+.history-page h3:first-child {
+  margin-top: 0;
+}

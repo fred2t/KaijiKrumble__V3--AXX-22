@@ -1,0 +1,119 @@
+.section-separator {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-separator {
+  height: 6rem;
+  background-image: url("../../../public/svgs/sep-start.svg");
+}
+
+.section {
+  color: black;
+}
+
+.section-one {
+  background-color: var(--sm-comp-3);
+}
+.section-one .game-explanation-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.section-one .game-explanation-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 27vw;
+}
+.section-one .game-explanation-container .card-1 {
+  align-items: center;
+}
+.section-one .game-explanation-container .card-1 img {
+  height: 10rem;
+  width: 6rem;
+  margin-right: 1rem;
+}
+.section-one .game-explanation-container .card-1 img:last-child {
+  margin-right: 0;
+}
+.section-one .game-explanation-container .card-1 .starting-hands {
+  width: 15rem;
+  height: 10rem;
+}
+.section-one .game-explanation-container .card-2 .rule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-one .game-explanation-container .card-2 .rule .visual-helper {
+  display: flex;
+  align-items: center;
+}
+.section-one .game-explanation-container .card-2 img {
+  height: 5rem;
+  width: 3rem;
+}
+.section-one .game-explanation-container .card-2 .red-x {
+  height: 3rem;
+  width: 3rem;
+}
+.section-one .game-explanation-container .card-3 .rotate-icon-container {
+  display: flex;
+  justify-content: center;
+}
+.section-one .game-explanation-container .card-3 .rotate-icon-container .rotate-icon {
+  width: 10rem;
+}
+.section-one .play-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.section-one .play-button-container .play-button {
+  width: 30rem;
+  height: 7rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  font-size: 3rem;
+  transition: 0.5s ease;
+}
+.section-one .play-button-container .play-button:hover {
+  transform: scale(1.1);
+}
+
+.separator-1 {
+  background-image: url("../../../public/svgs/sep-2.svg");
+  height: 15rem;
+}
+
+.section-two {
+  background-color: var(--sm-comp-4);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 2rem;
+}
+
+.separator-2 {
+  background-image: url("../../../public/svgs/sep-3.svg");
+  height: 15rem;
+}
+
+.section-three {
+  background-color: var(--sm-comp-5);
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.section-three .large {
+  font-size: 1.3rem;
+}
+.section-three > h1 {
+  padding-top: 2rem;
+}
+
+.last-section-separator {
+  height: 13rem;
+  background-image: url("../../../public/svgs/sep-end.svg");
+}
