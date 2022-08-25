@@ -5,7 +5,7 @@ Play the E-Card from, Kaiji: Ultimate Survivor; <b>https://kaijikrumble.com/</b>
 # QOL Statistics
 
 <ul>
-  <li><b>Fast gameplay all over the world</b></li>
+  <li><b>Fast gameplay worldwide</b></li>
   <li><b>Scale: 1.9k active users</b></li>
   <li><b>#1 SEO'd ranking for "kaiji krumble"</b></li>
   <li><b>Type-supported WebSockets architecture</b></li>
