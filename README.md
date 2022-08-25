@@ -1,8 +1,11 @@
 # KaijiKrumble
 Play the E-Card from the show, Kaiji: Ultimate Survivor. <b>https://kaijikrumble.com/</b>
 
-## Fast gameplay from around the world
-## Peak scale: 1.9k active users
-## "#1 SEO'd Ranking for Kaiji Krumble"
-## Type-supported WebSockets architecture
-## Optimized WebSockets dependencies
+<ul>
+  <li>Fast gameplay from around the world<li>
+  <li>Peak scale: 1.9k active users</li>
+  <li>#1 SEO'd Ranking for Kaiji Krumble</li>
+  <li>Type-supported WebSockets architecture</li>
+  <li>Optimized WebSockets dependencies</li>
+</ul>
+
