@@ -19,5 +19,5 @@ Play the E-Card from, Kaiji: Ultimate Survivor. <b>https://kaijikrumble.com/</b>
 # Warnings
 
 <ul>
-  <li><strong>Unsupported browser responsiveness support: Some safari specs, internet explorer</strong></li>
+  <li><strong>Unsupported browser responsiveness: Some safari specs, internet explorer</strong></li>
 </ul>
