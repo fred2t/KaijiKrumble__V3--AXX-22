@@ -1,6 +1,6 @@
 # KaijiKrumble
 
-Play the E-Card from, Kaiji: Ultimate Survivor. <b>https://kaijikrumble.com/</b> online
+Play the E-Card from, Kaiji: Ultimate Survivor; <b>https://kaijikrumble.com/</b> online
 
 # QOL Statistics
 
