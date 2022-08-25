@@ -10,4 +10,8 @@ Play the E-Card from, Kaiji: Ultimate Survivor. <b>https://kaijikrumble.com/</b>
   <li>Optimized WebSockets dependencies</li>
 </ul>
 
-![image](https://user-images.githubusercontent.com/69024184/186688466-45de7e90-b963-499f-b5ec-76d23c5bb569.png)
+# Eng
+![image](https://user-images.githubusercontent.com/69024184/186688582-610d0b59-ea95-422d-9542-f61b0f5d6b90.png)
+
+# Catch
+Unsupported browser responsiveness support: Some safari specs, internet explorer 
