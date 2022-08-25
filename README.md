@@ -16,6 +16,5 @@ Play the E-Card from, Kaiji: Ultimate Survivor. <b>https://kaijikrumble.com/</b>
 
 ![image](https://user-images.githubusercontent.com/69024184/186688582-610d0b59-ea95-422d-9542-f61b0f5d6b90.png)
 
-<!-- notes -->
-
+# Warning
 <strong>Unsupported browser responsiveness support: Some safari specs, internet explorer</strong>
